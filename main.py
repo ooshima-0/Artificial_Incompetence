@@ -59,5 +59,8 @@ if __name__ == "__main__":
 		if not text:
 			break
 
+		if text == "exit":
+			break
+
 		response = proto.dialogue(text)
 		print("{prompt}{response}".format(prompt = build_prompt(proto), response = response))
